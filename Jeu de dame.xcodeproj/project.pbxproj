@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A88E06920B8727F00674D99 /* PlateauController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A88E06520B8727F00674D99 /* PlateauController.swift */; };
+		7A88E06A20B8727F00674D99 /* PlateauController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A88E06620B8727F00674D99 /* PlateauController.xib */; };
+		7A88E06D20B872BF00674D99 /* CaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A88E06B20B872BF00674D99 /* CaseCollectionViewCell.swift */; };
+		7A88E06E20B872BF00674D99 /* CaseCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A88E06C20B872BF00674D99 /* CaseCollectionViewCell.xib */; };
+		7A88E07220B87ACA00674D99 /* Case.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A88E07120B87ACA00674D99 /* Case.swift */; };
+		7A88E07420B87ADA00674D99 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A88E07320B87ADA00674D99 /* Game.swift */; };
+		7AA9E17A20B87E5C00AF851F /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA9E17920B87E5C00AF851F /* Enum.swift */; };
 		97FFF43C20B84DE400299D58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FFF43B20B84DE400299D58 /* AppDelegate.swift */; };
-		97FFF43E20B84DE400299D58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FFF43D20B84DE400299D58 /* ViewController.swift */; };
-		97FFF44120B84DE400299D58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97FFF43F20B84DE400299D58 /* Main.storyboard */; };
 		97FFF44320B84DE400299D58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97FFF44220B84DE400299D58 /* Assets.xcassets */; };
 		97FFF44620B84DE400299D58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97FFF44420B84DE400299D58 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A88E06520B8727F00674D99 /* PlateauController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlateauController.swift; sourceTree = "<group>"; };
+		7A88E06620B8727F00674D99 /* PlateauController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlateauController.xib; sourceTree = "<group>"; };
+		7A88E06B20B872BF00674D99 /* CaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		7A88E06C20B872BF00674D99 /* CaseCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CaseCollectionViewCell.xib; sourceTree = "<group>"; };
+		7A88E07120B87ACA00674D99 /* Case.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Case.swift; sourceTree = "<group>"; };
+		7A88E07320B87ADA00674D99 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		7AA9E17920B87E5C00AF851F /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
 		97FFF43820B84DE400299D58 /* Jeu de dame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jeu de dame.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		97FFF43B20B84DE400299D58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		97FFF43D20B84DE400299D58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		97FFF44020B84DE400299D58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		97FFF44220B84DE400299D58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97FFF44520B84DE400299D58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97FFF44720B84DE400299D58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -35,6 +45,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A88E06120B8727F00674D99 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7A88E06220B8727F00674D99 /* Cells */,
+				7A88E06520B8727F00674D99 /* PlateauController.swift */,
+				7A88E06620B8727F00674D99 /* PlateauController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7A88E06220B8727F00674D99 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				7A88E06B20B872BF00674D99 /* CaseCollectionViewCell.swift */,
+				7A88E06C20B872BF00674D99 /* CaseCollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		7A88E06F20B87AB100674D99 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7A88E07120B87ACA00674D99 /* Case.swift */,
+				7A88E07320B87ADA00674D99 /* Game.swift */,
+				7AA9E17920B87E5C00AF851F /* Enum.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		97FFF42F20B84DE400299D58 = {
 			isa = PBXGroup;
 			children = (
@@ -54,9 +93,9 @@
 		97FFF43A20B84DE400299D58 /* Jeu de dame */ = {
 			isa = PBXGroup;
 			children = (
+				7A88E06F20B87AB100674D99 /* Models */,
+				7A88E06120B8727F00674D99 /* Controllers */,
 				97FFF43B20B84DE400299D58 /* AppDelegate.swift */,
-				97FFF43D20B84DE400299D58 /* ViewController.swift */,
-				97FFF43F20B84DE400299D58 /* Main.storyboard */,
 				97FFF44220B84DE400299D58 /* Assets.xcassets */,
 				97FFF44420B84DE400299D58 /* LaunchScreen.storyboard */,
 				97FFF44720B84DE400299D58 /* Info.plist */,
@@ -91,7 +130,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Adrien LEFAURE";
 				TargetAttributes = {
 					97FFF43720B84DE400299D58 = {
@@ -125,7 +164,8 @@
 			files = (
 				97FFF44620B84DE400299D58 /* LaunchScreen.storyboard in Resources */,
 				97FFF44320B84DE400299D58 /* Assets.xcassets in Resources */,
-				97FFF44120B84DE400299D58 /* Main.storyboard in Resources */,
+				7A88E06E20B872BF00674D99 /* CaseCollectionViewCell.xib in Resources */,
+				7A88E06A20B8727F00674D99 /* PlateauController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,22 +176,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97FFF43E20B84DE400299D58 /* ViewController.swift in Sources */,
+				7A88E06920B8727F00674D99 /* PlateauController.swift in Sources */,
+				7A88E07420B87ADA00674D99 /* Game.swift in Sources */,
+				7AA9E17A20B87E5C00AF851F /* Enum.swift in Sources */,
+				7A88E07220B87ACA00674D99 /* Case.swift in Sources */,
 				97FFF43C20B84DE400299D58 /* AppDelegate.swift in Sources */,
+				7A88E06D20B872BF00674D99 /* CaseCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		97FFF43F20B84DE400299D58 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				97FFF44020B84DE400299D58 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		97FFF44420B84DE400299D58 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -177,6 +213,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -184,6 +221,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -234,6 +272,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -241,6 +280,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -275,7 +315,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YGXU8DX4B5;
 				INFOPLIST_FILE = "Jeu de dame/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "fr.u-clermont1.iut.Jeu-de-dame";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,7 +331,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YGXU8DX4B5;
 				INFOPLIST_FILE = "Jeu de dame/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "fr.u-clermont1.iut.Jeu-de-dame";
 				PRODUCT_NAME = "$(TARGET_NAME)";
