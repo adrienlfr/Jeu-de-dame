@@ -7,6 +7,14 @@
 //
 
 import Foundation
-import UIKit
 
+enum PionColor {
+    case noir
+    case blanc
+    case vide
+}
 
+enum CaseBackground {
+    case light
+    case dark
+}

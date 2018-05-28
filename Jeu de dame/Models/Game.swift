@@ -18,32 +18,32 @@ struct Game {
     mutating func startGame() {
         for _ in 0..<2 {
             for _ in 0..<5 {
-                plateau.append(Case(fond: #imageLiteral(resourceName: "fondWhite"), contientPion: false, color: nil))
-                plateau.append(Case(fond: #imageLiteral(resourceName: "fondBlack"), contientPion: true, color: UIColor.black))
+                plateau.append(Case(fond: #imageLiteral(resourceName: "fondWhite"), pionColor: .vide))
+                plateau.append(Case(fond: #imageLiteral(resourceName: "fondBlack"), pionColor: .noir))
             }
             for _ in 0..<5 {
-                plateau.append(Case(fond: #imageLiteral(resourceName: "fondBlack"), contientPion: true, color: UIColor.black))
-                plateau.append(Case(fond: #imageLiteral(resourceName: "fondWhite"), contientPion: false, color: nil))
+                plateau.append(Case(fond: #imageLiteral(resourceName: "fondBlack"), pionColor: .noir))
+                plateau.append(Case(fond: #imageLiteral(resourceName: "fondWhite"), pionColor: .vide))
             }
         }
 
         for _ in 0..<5 {
-            plateau.append(Case(fond: #imageLiteral(resourceName: "fondWhite"), contientPion: false, color: nil))
-            plateau.append(Case(fond: #imageLiteral(resourceName: "fondBlack"), contientPion: false, color: nil))
+            plateau.append(Case(fond: #imageLiteral(resourceName: "fondWhite"), pionColor: .vide))
+            plateau.append(Case(fond: #imageLiteral(resourceName: "fondBlack"), pionColor: .vide))
         }
         for _ in 0..<5 {
-            plateau.append(Case(fond: #imageLiteral(resourceName: "fondBlack"), contientPion: false, color: nil))
-            plateau.append(Case(fond: #imageLiteral(resourceName: "fondWhite"), contientPion: false, color: nil))
+            plateau.append(Case(fond: #imageLiteral(resourceName: "fondBlack"), pionColor: .vide))
+            plateau.append(Case(fond: #imageLiteral(resourceName: "fondWhite"), pionColor: .vide))
         }
 
         for _ in 0..<2 {
             for _ in 0..<5 {
-                plateau.append(Case(fond: #imageLiteral(resourceName: "fondWhite"), contientPion: false, color: nil))
-                plateau.append(Case(fond: #imageLiteral(resourceName: "fondBlack"), contientPion: true, color: UIColor.white))
+                plateau.append(Case(fond: #imageLiteral(resourceName: "fondWhite"), pionColor: .vide))
+                plateau.append(Case(fond: #imageLiteral(resourceName: "fondBlack"), pionColor: .blanc))
             }
             for _ in 0..<5 {
-                plateau.append(Case(fond: #imageLiteral(resourceName: "fondBlack"), contientPion: true, color: UIColor.white))
-                plateau.append(Case(fond: #imageLiteral(resourceName: "fondWhite"), contientPion: false, color: nil))
+                plateau.append(Case(fond: #imageLiteral(resourceName: "fondBlack"), pionColor: .blanc))
+                plateau.append(Case(fond: #imageLiteral(resourceName: "fondWhite"), pionColor: .vide))
             }
         }
     }

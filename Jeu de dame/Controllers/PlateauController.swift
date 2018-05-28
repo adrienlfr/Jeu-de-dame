@@ -31,8 +31,9 @@ class PlateauController: UIViewController, UICollectionViewDelegate, UICollectio
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = plateauCollectionView.dequeueReusableCell(withReuseIdentifier: identifierCell, for: indexPath)
-        (cell as? CaseCollectionViewCell)?.configuration(image: game.plateau[indexPath.row].fond)
+        let cell = plateauCollectionView.dequeueReusableCell(withReuseIdentifier: identifierCell, for: indexPath) as! CaseCollectionViewCell
+        let laCase = game.plateau[indexPath.row]
+        cell.configuration(image: laCase.fond, colorPion: laCase.pionColor)
         return cell
     }
 
