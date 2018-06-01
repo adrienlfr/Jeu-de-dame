@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PlateauController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class PlateauController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var plateauCollectionView: UICollectionView!
     
@@ -23,7 +23,15 @@ class PlateauController: UIViewController, UICollectionViewDelegate, UICollectio
         plateauCollectionView.delegate = self
         plateauCollectionView.dataSource = self
         
+        
         plateauCollectionView.register(UINib.init(nibName: "CaseCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: identifierCell)
+    
+    }
+    
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        
+        plateauCollectionView.collectionViewLayout.invalidateLayout()
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -37,4 +45,9 @@ class PlateauController: UIViewController, UICollectionViewDelegate, UICollectio
         return cell
     }
 
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let height = plateauCollectionView.frame.height / 10
+        let widht = plateauCollectionView.frame.width / 10
+        return CGSize(width: widht, height: height)
+    }
 }
