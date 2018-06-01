@@ -10,6 +10,8 @@ import UIKit
 
 class PlateauController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
+    
+    
     @IBOutlet weak var plateauCollectionView: UICollectionView!
     
     var game = Game()
@@ -22,7 +24,6 @@ class PlateauController: UIViewController, UICollectionViewDataSource, UICollect
         
         plateauCollectionView.delegate = self
         plateauCollectionView.dataSource = self
-        
         
         plateauCollectionView.register(UINib.init(nibName: "CaseCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: identifierCell)
     
@@ -49,5 +50,14 @@ class PlateauController: UIViewController, UICollectionViewDataSource, UICollect
         let height = plateauCollectionView.frame.height / 10
         let widht = plateauCollectionView.frame.width / 10
         return CGSize(width: widht, height: height)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, canMoveItemAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, moveItemAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        print("Starting Index: \(sourceIndexPath.item)")
+        print("Ending Index: \(destinationIndexPath.item)")
     }
 }

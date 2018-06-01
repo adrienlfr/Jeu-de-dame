@@ -319,7 +319,7 @@
 				INFOPLIST_FILE = "Jeu de dame/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "fr.u-clermont1.iut.Jeudame";
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.u-clermont1.iut.Jeudedame";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "527d77bf-7812-450e-b707-6734ee6127af";
 				PROVISIONING_PROFILE_SPECIFIER = tpios;
@@ -337,7 +337,7 @@
 				INFOPLIST_FILE = "Jeu de dame/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "fr.u-clermont1.iut.Jeudame";
+				PRODUCT_BUNDLE_IDENTIFIER = "fr.u-clermont1.iut.Jeudedame";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "527d77bf-7812-450e-b707-6734ee6127af";
 				PROVISIONING_PROFILE_SPECIFIER = tpios;
