@@ -10,12 +10,11 @@ import UIKit
 
 class PlateauController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
-    
-    
     @IBOutlet weak var plateauCollectionView: UICollectionView!
     
     var game = Game()
     let identifierCell = "CaseCollectionViewCell"
+    var imageView: UIImageView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +23,7 @@ class PlateauController: UIViewController, UICollectionViewDataSource, UICollect
         
         plateauCollectionView.delegate = self
         plateauCollectionView.dataSource = self
+        plateauCollectionView.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture)))
         
         plateauCollectionView.register(UINib.init(nibName: "CaseCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: identifierCell)
     

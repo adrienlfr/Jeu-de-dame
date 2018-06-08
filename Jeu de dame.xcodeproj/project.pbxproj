@@ -14,6 +14,7 @@
 		7A88E07220B87ACA00674D99 /* Case.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A88E07120B87ACA00674D99 /* Case.swift */; };
 		7A88E07420B87ADA00674D99 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A88E07320B87ADA00674D99 /* Game.swift */; };
 		7AA9E17A20B87E5C00AF851F /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA9E17920B87E5C00AF851F /* Enum.swift */; };
+		9795AA6320CAC203009608C6 /* ViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9795AA6220CAC203009608C6 /* ViewControllerExtension.swift */; };
 		97FFF43C20B84DE400299D58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97FFF43B20B84DE400299D58 /* AppDelegate.swift */; };
 		97FFF44320B84DE400299D58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97FFF44220B84DE400299D58 /* Assets.xcassets */; };
 		97FFF44620B84DE400299D58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97FFF44420B84DE400299D58 /* LaunchScreen.storyboard */; };
@@ -27,6 +28,7 @@
 		7A88E07120B87ACA00674D99 /* Case.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Case.swift; sourceTree = "<group>"; };
 		7A88E07320B87ADA00674D99 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		7AA9E17920B87E5C00AF851F /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
+		9795AA6220CAC203009608C6 /* ViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtension.swift; sourceTree = "<group>"; };
 		97FFF43820B84DE400299D58 /* Jeu de dame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Jeu de dame.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		97FFF43B20B84DE400299D58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		97FFF44220B84DE400299D58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -74,6 +76,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		9795AA6120CAC1D9009608C6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9795AA6220CAC203009608C6 /* ViewControllerExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		97FFF42F20B84DE400299D58 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +103,7 @@
 		97FFF43A20B84DE400299D58 /* Jeu de dame */ = {
 			isa = PBXGroup;
 			children = (
+				9795AA6120CAC1D9009608C6 /* Extensions */,
 				7A88E06F20B87AB100674D99 /* Models */,
 				7A88E06120B8727F00674D99 /* Controllers */,
 				97FFF43B20B84DE400299D58 /* AppDelegate.swift */,
@@ -135,7 +146,7 @@
 				TargetAttributes = {
 					97FFF43720B84DE400299D58 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -178,6 +189,7 @@
 			files = (
 				7A88E06920B8727F00674D99 /* PlateauController.swift in Sources */,
 				7A88E07420B87ADA00674D99 /* Game.swift in Sources */,
+				9795AA6320CAC203009608C6 /* ViewControllerExtension.swift in Sources */,
 				7AA9E17A20B87E5C00AF851F /* Enum.swift in Sources */,
 				7A88E07220B87ACA00674D99 /* Case.swift in Sources */,
 				97FFF43C20B84DE400299D58 /* AppDelegate.swift in Sources */,
@@ -315,15 +327,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YGXU8DX4B5;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = DRCMU7YM68;
 				INFOPLIST_FILE = "Jeu de dame/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "fr.u-clermont1.iut.Jeudedame";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "527d77bf-7812-450e-b707-6734ee6127af";
+				PROVISIONING_PROFILE_SPECIFIER = tpios;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -334,15 +346,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = YGXU8DX4B5;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = DRCMU7YM68;
 				INFOPLIST_FILE = "Jeu de dame/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "fr.u-clermont1.iut.Jeudedame";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "527d77bf-7812-450e-b707-6734ee6127af";
+				PROVISIONING_PROFILE_SPECIFIER = tpios;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
