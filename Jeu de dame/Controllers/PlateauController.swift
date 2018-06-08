@@ -51,13 +51,4 @@ class PlateauController: UIViewController, UICollectionViewDataSource, UICollect
         let widht = plateauCollectionView.frame.width / 10
         return CGSize(width: widht, height: height)
     }
-    
-    func collectionView(_ collectionView: UICollectionView, canMoveItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, moveItemAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
-        print("Starting Index: \(sourceIndexPath.item)")
-        print("Ending Index: \(destinationIndexPath.item)")
-    }
 }
