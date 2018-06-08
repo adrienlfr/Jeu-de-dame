@@ -11,10 +11,10 @@ import UIKit
 
 struct Case {
     
-    var fond: UIImage
+    var fond: CaseBackground
     var pionColor: PionColor
     
-    init(fond: UIImage, pionColor: PionColor) {
+    init(fond: CaseBackground, pionColor: PionColor) {
         self.fond = fond
         self.pionColor = pionColor
     }

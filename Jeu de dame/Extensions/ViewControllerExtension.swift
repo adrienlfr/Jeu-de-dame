@@ -21,8 +21,8 @@ extension PlateauController: UIGestureRecognizerDelegate {
         if panGestureRecognizer.state == .began {
             // Create a current viewCell "screenshot" / TODO: only pionView should be duplicated
             let indexPathOfMovingCell = plateauCollectionView.indexPathForItem(at: locationPoint)!
-            let cell = plateauCollectionView.cellForItem(at: indexPathOfMovingCell)!
-            UIGraphicsBeginImageContext(cell.bounds.size)
+            let cell = plateauCollectionView.cellForItem(at: indexPathOfMovingCell)! as! CaseCollectionViewCell
+            UIGraphicsBeginImageContext(cell.pion.bounds.size)
             let ctx = UIGraphicsGetCurrentContext()!
             cell.layer.render(in: ctx)
             let cellImage = UIGraphicsGetImageFromCurrentImageContext()
@@ -43,8 +43,16 @@ extension PlateauController: UIGestureRecognizerDelegate {
             imageView?.center = locationPoint
         }
         if panGestureRecognizer.state == .ended {
-            // TODO: manage if movement is valid (update model accordingly)
             imageView?.removeFromSuperview()
+            
+            // TODO: manage if movement is valid (update model accordingly)
+            let index = plateauCollectionView.indexPathForItem(at: locationPoint)!
+            let cell = plateauCollectionView.cellForItem(at: index) as! CaseCollectionViewCell
+            if ( cell.fondImage.image == #imageLiteral(resourceName: "fondWhite") ) {
+                print("NON")
+            } else {
+                print("OUI")
+            }
         }
     }
 }

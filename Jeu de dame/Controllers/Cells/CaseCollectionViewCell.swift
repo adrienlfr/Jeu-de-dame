@@ -18,8 +18,13 @@ class CaseCollectionViewCell: UICollectionViewCell {
         // Initialization code
     }
     
-    func configuration(image: UIImage, colorPion: PionColor) {
-        fondImage.image = image
+    func configuration(image: CaseBackground, colorPion: PionColor) {
+        switch image {
+        case .light:
+            fondImage.image = #imageLiteral(resourceName: "fondWhite")
+        case .dark:
+            fondImage.image = #imageLiteral(resourceName: "fondBlack")
+        }
         pion.isHidden = false
         switch colorPion {
         case .blanc:
