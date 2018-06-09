@@ -15,6 +15,9 @@ class PlateauController: UIViewController, UICollectionViewDataSource, UICollect
     var game = Game()
     let identifierCell = "CaseCollectionViewCell"
     var imageView: UIImageView?
+    var currentCell: CaseCollectionViewCell?
+    var beganPosition: CGPoint?
+    var beganCellHavePion: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
