@@ -13,10 +13,10 @@ class PlateauController: UIViewController, UICollectionViewDataSource, UICollect
     @IBOutlet weak var plateauCollectionView: UICollectionView!
     
     var game = Game()
+    var animateEnable = true
     let identifierCell = "CaseCollectionViewCell"
     var imageView: UIImageView?
     var currentCell: CaseCollectionViewCell?
-    var beganPosition: CGPoint?
     var beganCellHavePion: Bool = false
     
     override func viewDidLoad() {
@@ -26,10 +26,12 @@ class PlateauController: UIViewController, UICollectionViewDataSource, UICollect
         
         plateauCollectionView.delegate = self
         plateauCollectionView.dataSource = self
-        plateauCollectionView.addGestureRecognizer(UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture)))
         
-        plateauCollectionView.register(UINib.init(nibName: "CaseCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: identifierCell)
-    
+        let panGR = UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture))
+        plateauCollectionView.addGestureRecognizer(panGR)
+        panGR.delegate = self
+        
+        plateauCollectionView.register(UINib(nibName: "CaseCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: identifierCell)
     }
     
     override func viewWillLayoutSubviews() {
